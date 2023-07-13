@@ -1,14 +1,16 @@
-$("#decoration-topbar").render("../../assets/components/decoration-topbar.htm");
+$("#decoration-topbar").render(
+  "AmikomRPSManager/assets/components/decoration-topbar.htm"
+);
 $("#form-unit-pembelajaran").render(
-  "../../assets/components/accordion-unit-pembelajaran.htm",
+  "AmikomRPSManager/assets/components/accordion-unit-pembelajaran.htm",
   [{ id: 1 }, { id: 2 }]
 );
 $("#form-tugas-penilaian").render(
-  "../../assets/components/accordion-tugas-penilaian.htm",
+  "AmikomRPSManager/assets/components/accordion-tugas-penilaian.htm",
   [{ id: 1 }, { id: 2 }]
 );
 $("#form-rencana-pembelajaran").render(
-  "../../assets/components/accordion-rencana-pembelajaran.htm",
+  "AmikomRPSManager/assets/components/accordion-rencana-pembelajaran.htm",
   [{ id: 1 }, { id: 2 }]
 );
 
