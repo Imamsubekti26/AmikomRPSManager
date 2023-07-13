@@ -14,10 +14,5 @@ const data = [
     tahun: 2022,
   },
 ];
-$("#decoration-topbar").render(
-  "./AmikomRPSManager/assets/components/decoration-topbar.htm"
-);
-$("#list-of-matkul").render(
-  "./AmikomRPSManager/assets/components/matkul-loop-card.htm",
-  data
-);
+$("#decoration-topbar").render("./assets/components/decoration-topbar.htm");
+$("#list-of-matkul").render("./assets/components/matkul-loop-card.htm", data);
