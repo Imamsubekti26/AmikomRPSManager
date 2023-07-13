@@ -15,9 +15,9 @@ const data = [
   },
 ];
 $("#decoration-topbar").render(
-  "AmikomRPSManager/assets/components/decoration-topbar.htm"
+  "./AmikomRPSManager/assets/components/decoration-topbar.htm"
 );
 $("#list-of-matkul").render(
-  "AmikomRPSManager/assets/components/matkul-loop-card.htm",
+  "./AmikomRPSManager/assets/components/matkul-loop-card.htm",
   data
 );
