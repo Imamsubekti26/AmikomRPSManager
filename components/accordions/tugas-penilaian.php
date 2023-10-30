@@ -6,43 +6,43 @@
         aria-expanded="false"
         class="accordion-button collapsed"
         data-bs-toggle="collapse"
-        data-bs-target="#form-tugas-penilaian-::id"
+        data-bs-target="#form-tugas-penilaian-::id_tugas"
       >
-        menjemur pakaian
+        ::judul
       </button>
     </h2>
-    <div class="accordion-collapse collapse" id="form-tugas-penilaian-::id">
+    <div class="accordion-collapse collapse" id="form-tugas-penilaian-::id_tugas">
       <div class="accordion-body">
         <div class="my-3">
-          <button class="btn btn-sm btn-warning me-2">Edit</button
-          ><button class="btn btn-sm btn-outline-danger mx-2">Hapus</button>
+          <button class="btn btn-sm btn-warning me-2" onclick="Tugas().GetOne('::id_tugas')">Edit</button
+          ><button class="btn btn-sm btn-outline-danger mx-2" onclick="Tugas().Delete('::id_tugas')">Hapus</button>
         </div>
         <div class="">
           <strong>Tugas / Aktivitas</strong>
-          <p>menjemur pakaian</p>
+          <p>::tugas</p>
         </div>
         <div class="">
           <strong>Kemampuan Akhir yang Diharapkan atau Dievaluasi</strong>
-          <p>lorem200</p>
+          <p>::kemampuan</p>
         </div>
         <div class="row">
           <div class="col-6">
             <strong>Kriteria Penilaian</strong>
-            <p>presentasi</p>
+            <p>::kriteria_pen</p>
           </div>
           <div class="col-6">
             <strong>Indikator Penilaian</strong>
-            <p>siswa mampu membobol server nasa</p>
+            <p>::indikator_pen</p>
           </div>
         </div>
         <div class="row">
           <div class="col-6">
             <strong>Waktu</strong>
-            <p>200 menit</p>
+            <p>::lama_waktu</p>
           </div>
           <div class="col-6">
             <strong>Bobot Nilai</strong>
-            <p>2 persen</p>
+            <p>::bobot_nilai</p>
           </div>
         </div>
       </div>

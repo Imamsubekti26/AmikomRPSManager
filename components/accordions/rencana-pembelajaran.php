@@ -6,46 +6,46 @@
         aria-expanded="false"
         class="accordion-button collapsed"
         data-bs-toggle="collapse"
-        data-bs-target="#form-rencana-pembelajaran-::id"
+        data-bs-target="#form-rencana-pembelajaran-::id_rencana"
       >
-        lorem20
+        pertemuan ke-::pertemuan_ke
       </button>
     </h2>
     <div
       class="accordion-collapse collapse"
-      id="form-rencana-pembelajaran-::id"
+      id="form-rencana-pembelajaran-::id_rencana"
     >
       <div class="accordion-body">
         <div class="my-3">
-          <button class="btn btn-sm btn-warning me-2">Edit</button
-          ><button class="btn btn-sm btn-outline-danger mx-2">Hapus</button>
+          <button class="btn btn-sm btn-warning me-2" onclick="Rencana().GetOne('::id_rencana')">Edit</button
+          ><button class="btn btn-sm btn-outline-danger mx-2" onclick="Rencana().Delete('::id_rencana')">Hapus</button>
         </div>
         <div class="">
           <strong>Kemampuan Akhir yang diharapkan</strong>
-          <p>lorem200</p>
+          <p>::kemampuan</p>
         </div>
         <div class="">
           <strong>Indikator</strong>
-          <p>siswa mampu meminjam buku</p>
+          <p>::indikator</p>
         </div>
         <div class="row">
           <div class="col-6">
             <strong>Topik &amp; Sub-topik</strong>
-            <p>if else</p>
+            <p>::topik_subtopik</p>
           </div>
           <div class="col-6">
             <strong>Aktivitas / Strategi Pembelajaran</strong>
-            <p>menjadi supermen</p>
+            <p>::strategi</p>
           </div>
         </div>
         <div class="row">
           <div class="col-6">
             <strong>Waktu</strong>
-            <p>200 menit</p>
+            <p>::lama_waktu</p>
           </div>
           <div class="col-6">
             <strong>Penilaian</strong>
-            <p>Tanya Jawab</p>
+            <p>::penilaian</p>
           </div>
         </div>
       </div>

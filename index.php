@@ -7,7 +7,7 @@
   </head>
   <body>
     <script>
-      window.location.href = "./login.html";
+      window.location.href = "./login.php";
     </script>
   </body>
 </html>
