@@ -5,43 +5,43 @@
         class="accordion-button collapsed"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#form-unit-pem-::id"
+        data-bs-target="#form-unit-pem-::id_unit"
       >
-        lorem ipsum
+        ::judul
       </button>
     </h2>
-    <div class="accordion-collapse collapse" id="form-unit-pem-::id">
+    <div class="accordion-collapse collapse" id="form-unit-pem-::id_unit">
       <div class="accordion-body">
         <div class="my-3">
-          <button class="btn btn-sm btn-warning me-2">Edit</button
-          ><button class="btn btn-sm btn-outline-danger mx-2">Hapus</button>
+          <button class="btn btn-sm btn-warning me-2" onclick="UnitPem().GetOne('::id_unit')">Edit</button
+          ><button class="btn btn-sm btn-outline-danger mx-2" onclick="UnitPem().Delete('::id_unit')">Hapus</button>
         </div>
         <div class="">
           <strong>Kemampuan Akhir yang diharapkan</strong>
-          <p>lorem90</p>
+          <p>::kemampuan</p>
         </div>
         <div class="">
           <strong>Indikator</strong>
-          <p>lorem</p>
+          <p>::indikator</p>
         </div>
         <div class="row">
           <div class="col-4">
             <strong>Bahan Kajian</strong>
-            <p>lorem89</p>
+            <p>::bahan_kajian</p>
           </div>
           <div class="col-4">
             <strong>Metode Pembelajaran</strong>
-            <p>ipsum lor</p>
+            <p>::metode_pem</p>
           </div>
           <div class="col-4">
             <strong>Metode Penilaian</strong>
-            <p>sit amet</p>
+            <p>::metode_pen</p>
           </div>
         </div>
         <div class="row">
           <div class="col-4">
             <strong>Waktu</strong>
-            <p>lorems sit amet</p>
+            <p>::lama_waktu</p>
           </div>
           <div class="col-4">
             <strong>Bahan Ajar</strong>
