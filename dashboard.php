@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+if (!isset($_SESSION["user"])) header("location:./login.php");
 const SITE_TITLE = "Amikom RPS Manager";
 ?>
 
