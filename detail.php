@@ -3,9 +3,9 @@ session_start();
 const SITE_TITLE = "Amikom RPS Manager";
 
 require_once "./config/config.php";
-require_once "./controller/rps.php";
+require_once "./controller/jadwal.php";
 
-$basicData = Rps::getDetail($_GET['id']);
+$basicData = Jadwal::getDetail($_GET['id']);
 $isDisableButton = ($basicData['status'] == 0)? '':'disabled';
 $db -> close();
 
