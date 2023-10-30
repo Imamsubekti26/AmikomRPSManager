@@ -1,38 +1,37 @@
+<?php
+session_start();
+const SITE_TITLE = "Login Amikom RPS Manager";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Amikom RPS Manager</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./assets/css/custom.css" />
-  </head>
+  <?php include_once "./components/header.php" ?>
   <body>
     <div class="d-flex justify-content-center align-items-center full-body">
       <div class="card login-card p-5">
         <h4 class="text-center">
           <strong>Amikom RPS Manager</strong>
         </h4>
-        <form method="get" action="./dashboard.html">
+        <form action="./routes/auth.php?x=1" method="POST">
           <div class="form-group mb-3">
-            <label class="form-label" htmlFor="nik"> NIK </label>
-            <input class="form-control" type="text" id="nik" />
+            <label class="form-label" for="nik"> NIK </label>
+            <input class="form-control" type="text" id="nik" value="<?= $_SESSION['old']['nik'] ??'' ?>" name="nik" />
           </div>
           <div class="form-group mb-3">
-            <label class="form-label" htmlFor="password"> Password </label>
-            <input class="form-control" type="password" id="password" />
+            <label class="form-label" for="password"> Password </label>
+            <input
+              class="form-control"
+              type="password"
+              id="password"
+              name="pass"
+            />
           </div>
           <div
             class="d-flex justify-content-between align-items-center mt-4 mb-3"
           >
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="rememberme" />
-              <label class="form-check-label" htmlFor="rememberme">
+              <label class="form-check-label" for="rememberme">
                 Remember Me
               </label>
             </div>
@@ -53,8 +52,15 @@
             Amikom Google Account
           </button>
         </div>
+        <p class="text-center mt-4">
+          Belum Punya Akun? klik
+          <a href="./register.php"> disini</a>
+        </p>
       </div>
     </div>
-    <script src="./assets/js/login.js"></script>
   </body>
 </html>
+<?php
+unset($_SESSION['msg']);
+unset($_SESSION['old']);
+?>
